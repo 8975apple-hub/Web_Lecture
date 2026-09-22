@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<!-- =======================  자기소개 부분 ======================= -->
+    <header>
+        <title>
+            나의 웹 프로필
+        </title>
+
+        <h1>나의 웹 프로필</h1>
+        <p> HTML 기본 태그를 활용하여 만든 웹페이지입니다.</p>
+    
+    </header>
+    <hr>
+
+<!-- ========================================================== -->
+
+
+
+<!-- ======================== nav 부분 ======================== -->
+    <nav>
+        <a href="#introduce"> 소개 </a> |
+        <a href="#interest"> 관심 분야</a> |
+        <a href="#StudyPlan"> 학습 계획</a> |
+        <a href="#inquiry"> 문의하기</a> |
+    </nav>
+    <hr>
+<!-- ========================================================== -->
+
+
+
+<!-- ======================== 관심분야 부분 ======================== -->
+ <main>
+    <h1 id="introduce"> 1.자기소개 </h1>
+    <h3> 안녕하세요!</h3>
+    <p> 저는 <b>웹 프로그래밍</b>을 공부하고 있습니다.<br>
+    현재 <b>HTML5</b>의 기본 구조와 다양한 태그를 학습하고 있습니다.<br>
+    앞으로 CSS와 JaveScript도 공부할 예정입니다.</p><br>
+    <img src = "/123456.jpg" alt="이미지" width=400">
+    <hr>
+    
+    <!-- >>>>>>>>>>>>>> 관심 분야 <<<<<<<<<<<<<< -->
+    <h1 id="interest"> 2.관심분야 </h1>
+    <h3> 관심있는 기술</h3>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JaveScript</li>
+        <li>React</li>
+    </ul>
+
+    <!-- >>>>>>>>>>>>>> 학습 순서 <<<<<<<<<<<<<< -->
+    <h3> 학습 순서</h3>
+    <ol>
+        <li>HTML 배우기</li>
+        <li> 배우기</li>
+        <li>JaveScript 배우기</li>
+        <li>웹 프로젝트 만들기</li>
+    </ol>
+
+    <hr>
+
+    <!-- >>>>>>>>>>>>>> 학습 계획 <<<<<<<<<<<<<< -->
+    <h1 id="StudyPlan"> 3.학습 계획 </h1>
+    <table border="1">
+        <tbody>
+            <tr>
+                <th rowspan="1">주차 </th>
+                <th rowspan="1">학습 내용 </th>
+                <th rowspan="1">상태</th>
+            </tr>
+            
+            <tr>
+                <td>1주차</td>
+                <th> HTML 기본</th>
+                <th> 학습 완료</th>
+            </tr>
+
+            <tr>
+                <td>2주차</td>
+                <th> CSS 기본</th>
+                <th> 학습 예정</th>
+            </tr>
+
+            <tr>
+                <td>3주차</td>
+                <th> JaveScript 기본</th>
+                <th> 학습 예정</th>
+            </tr>
+
+        </tbody>
+
+    </table>
+ </main>
+ <hr>
+<!-- ========================================================== -->
+
+
+
+<!-- ======================== 문의하기 부분 ======================== -->
+
+<h1 id="inquiry">4. 문의하기</h1>
+<form>
+    <label for="name">이름</label><br>
+    <input id="name" type="text" placeholder="이름을 입력하세요."><br><br>
+
+    <label for="password">비밀번호</label><br>
+    <input id="password" type="text"><br><br>
+
+    <label for="email">이메일</label><br>
+    <input id="email" type="text" placeholder="example@email.com"><br><br>
+
+    <label for="birthday">생년월일</label><br>
+    <input id="birthday" type="date"><br><br>
+
+    <label for="grade">학년</label><br>
+    <input id="grade" type="text"><br><br>
+
+    <!-- >>>>>>>>>>>>>> 관심 분야 <<<<<<<<<<<<<< -->
+
+    <label>관심분야</label><br><br>
+
+    <input type="radio" id="frontend" name="interest" value="frontend">
+    <label for="frontend">프론트엔드</label>
+
+    
+    <input type="radio" id="backend" name="interest" value="backend">
+    <label for="backend">백앤드</label>
+    
+    
+    <input type="radio" id="AI" name="interest" value="AI">
+    <label for="AI">AI</label><br><br>
+
+    <!-- >>>>>>>>>>>>>> 배우고 싶은 기술 <<<<<<<<<<<<<< -->
+
+     <label>배우고 싶은 기술</label><br><br>
+
+    <input type="checkbox" id="HTML" name="interest" value="HTML">
+    <label for="HTML">HTML</label>
+
+    
+    <input type="checkbox" id="CSS" name="interest" value="CSS">
+    <label for="backend">CSS</label>
+    
+    
+    <input type="checkbox" id="JaveScript" name="interest" value="JaveScript">
+    <label for="AI">JaveScript</label><br><br>
+    
+    <label>웹 프로그래밍 수준</label><br><br>
+    <select>
+        <option>초급</option>
+        <option>중급</option>
+        <option>고급</option>
+    </select><br><br>
+
+
+    <label>문의 내용</label><br>
+    <textarea class="message-box" name="message" placeholder="문의 내용을 입력하세요"></textarea><br><br>
+    
+    <style>
+      .message-box {
+        width: 450px;
+        height: 120px;
+      }
+    </style>
+
+    <button type="submit"> 제출</button>
+    <button type="reset"> 초기화</button>
+
+    <h2> 참고 사이트</h2>
+    <p> HTML에 대해 더 고우하고 싶다면?</p>
+    <hr>
+    <p> Copyright ⓒ 2026 Web Programming </p>
+    <p>HTML 종합 실습 페이지</p>
+</form>
+
