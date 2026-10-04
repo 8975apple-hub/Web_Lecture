@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PROFILE</title>
+
+    <style>
+        /* ============== 바깥 배경 부분 ============== */
+        #main-box {
+            width: 600px;
+            min-height: 1000px;
+            border: 5px solid black;
+            border-radius: 25px;
+            background-color: white;
+            margin: 0 auto;
+        }
+
+        /* ============= 제목 영역 ============== */
+        #header {
+            background-color: Darkblue;
+            color: white;
+            text-align: center;
+            padding: 15px 0px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }   
+ 
+        /* ============= 프로필 영역 ============== */
+        #profile {
+            background-color : skyblue;
+            border-radius: 20px;
+            padding: 20px;
+            margin: 20px;   
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        #profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid white;
+            object-fit: cover;
+        }
+        
+        #profile h2
+        {
+         font-size: 20px;
+         margin-bottom: 10px;
+         color: black;
+        }
+
+        #profile p {
+         font-size: 15px;
+         margin-bottom: 5px;
+         color: black;
+        }
+        /* ================= 관심 기술 영역 ================= */
+        
+        #interest {
+            border : 2px solid lightgray;
+            background-color: white;
+            border-radius: 20px;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        #interest h3 {
+            color : darkblue;
+            font-size: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid darkblue;
+            margin-bottom: 10px;
+        }
+
+        #interest span{
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 15px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        #html{ background-color: lightgreen; }
+        #css{ background-color: pink; }
+        #javascript{ background-color: lightgray; }
+        #git{ background-color: pink; }
+
+        /* ============= 자기소개 영역 ============== */
+        #introduction {
+            border : 1px solid lightgray;
+            background-color: white;
+            border-radius: 20px;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        #introduction h3 {
+            color : darkblue;
+            font-size: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid darkblue;
+            margin-bottom: 10px;
+        }
+
+        #introduction p {
+            font-size: 15px;
+            color: black;
+        }
+
+        /* ================== 문의하기 영역 ================== */
+
+        #contact {
+            border : 1px solid lightgray;
+            background-color: white;
+            border-radius: 20px;
+            padding: 20px;
+            margin: 20px;
+        }
+        #contact h3 {
+            color : darkblue;
+            font-size: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid darkblue;
+            margin-bottom: 10px;
+        }
+
+        #contact label {
+            display: inline-block;
+            width: 70px;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        #contact input{
+            padding: 5px;
+            border: 1px solid lightgray;
+            border-radius: 5px;
+            font-size: 15px;
+            width: 200px;
+        }
+
+        #contact input[type="name"]{
+            background-color: lightyellow
+        }
+
+        #contact input[type="email"]{
+            background-color: lightblue;
+        }
+
+        #contact button{
+            margin-left: 80px;
+            padding: 10px 50px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* ============ 카피라이트 영역 ============== */
+        #copyright {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px 0px;
+            font-size: 15px;
+            margin-top: 10px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+</style>
+</head>
+<body>
+    <!-- ============== 메인 영역 ============== -->
+    <div id="main-box">
+        <header id="header">
+            <h1>MY PROFILE</h1>
+            <p>Web Programming Practice</p>
+        </header>
+
+<!-- ===========프로필 영역========== -->
+        <div id="profile">
+            <img src="profile.jpg" alt="프로필 이미지">
+            <div>
+                <h2>박검무</h2>
+                <p>전공 : 컴퓨터소프트웨어전공</p>
+                <p>관심분야 : Web / AI / XR</p>
+            </div>
+        </div>
+
+    <!-- =========== 관심 기술 영역========== -->      
+      <div id="interest">
+            <h3>관심 기술</h3>
+            <span id="html">HTML</span>
+            <span id="css">CSS</span>
+            <span id="javascript">JavaScript</span>
+            <span id="git">Git</span>
+        </div>
+
+    <!-- =========== 자기소개 영역========== -->
+        <div id="introduction">
+            <h3>자기소개</h3>
+            <p>웹 프로그래밍을 공부하고 있습니다. HTML과 CSS를 사용하여 웹페이지의 구조와 디자인을 구현하는 방법을 학습하고 있습니다. 다양한 CSS 속성과 선택지를 사용하여 웹페이지의 디자인을 자유롭게 변경 할 수 있습니다.</p>
+            <p>앞으로 JavaScript와 Rect를 학습하여 사용자와 상호작용할 수 있는 다양한 웹 서비스를 개발하는 것이 목표입니다.
+        </div>
+
+    <!-- =========== 문의하기 영역========== -->
+        <div id="contact">
+            <h3> 문의하기 </h3>
+
+            <label>이름 </label>
+            <input type="name" placeholder="이름을 입력하세요"><br><br>
+
+            <label>이메일 </label>
+            <input type="email" placeholder="이메일을 입력하세요"><br><br>
+
+            <button type="submit">문의하기</button>
+        </div>
+
+
+    <!-- =========== 카피라이트 영역========== -->
+        <footer id="copyright">
+            <p> 2026 Web programming Practice.</p>
+        </footer>
+</body>
+</html>
