@@ -1,0 +1,44 @@
+h1 {
+    float: left;
+    margin-right: 30px;
+}
+
+.menu {
+    float: right;
+}
+
+.item_01 {
+    float: left;
+    margin-right: 15px;
+    padding: 5px;
+}
+
+hr {
+    clear: both;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.container {
+    width: 800px;
+}
+
+.box_left {
+    float: left;
+    width: 450px;
+    border: 1px solid black;
+    padding: 20px;
+    height: 200px;
+}
+
+.box_right {
+    float: right;
+    width: 250px;
+    border: 1px solid black;
+    padding: 20px;
+    height: 200px;
+}
+
+.Copyright {
+    text-align: center;
+}
